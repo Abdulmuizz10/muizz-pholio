@@ -71,9 +71,9 @@ export default function About() {
 
       <div className="max-w-4xl">
         <Paragraph className=" mt-4">
-          Hey there, I&apos;m John Doe - a passionate developer, avid writer,
-          and a connoisseur of awesome design. Welcome to my corner of the
-          digital world!
+          Hey there, I&apos;m Abdul Muizz - a passionate junior developer, avid
+          writer, and a connoisseur of awesome design. Welcome to my corner of
+          the digital world!
         </Paragraph>
         <Paragraph className=" mt-4">
           Since the early days of my journey, I&apos;ve been captivated by the
@@ -81,14 +81,6 @@ export default function About() {
           thrive on turning lines of code into functional and elegant solutions.
           My goal is to not just create software, but to build digital marvels
           that seamlessly merge form and function.
-        </Paragraph>
-
-        <Paragraph className=" mt-4">
-          But my journey doesn&apos;t stop at coding. With a heart full of words
-          and a mind brimming with ideas, I&apos;ve ventured into the realm of
-          writing. From tech articles that unravel complex concepts to creative
-          tales that ignite the imagination, I weave words to inform, entertain,
-          and inspire.
         </Paragraph>
         <Paragraph className=" mt-4">
           What sets me apart is my unwavering appreciation for design. I believe
@@ -99,9 +91,8 @@ export default function About() {
         <Paragraph className=" mt-4">
           Through this website, I aim to share my insights, experiences, and
           creations with you. Whether you&apos;re a fellow developer seeking
-          solutions, a fellow writer in search of inspiration, or simply someone
-          who appreciates the finer aspects of design, there&apos;s something
-          here for you.
+          solutions, or simply someone who appreciates the finer aspects of
+          design, there&apos;s something here for you.
         </Paragraph>
         <Paragraph className=" mt-4">
           Join me on this journey of bytes and narratives, logic and creativity,

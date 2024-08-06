@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const defaultFormState = {
   name: {
@@ -17,11 +18,53 @@ const defaultFormState = {
 };
 export const Contact = () => {
   const [formData, setFormData] = useState(defaultFormState);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
     // Write your submit logic here
-    console.log(formData);
+    setLoading(true);
+    emailjs
+      .send(
+        "service_pf7mkfr",
+        "template_q03k4xr",
+        {
+          from_name: formData.name.value,
+          to_name: "Abdul Muizz",
+          from_email: formData.email.value,
+          to_email: "harrismuizz10@gmail.com",
+          message: formData.message.value,
+        },
+        "TMafrinW0Sdo0R_V6"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert(
+            "Thank you for sending me a message, I will definitely reach out to you."
+          );
+          setFormData({
+            name: {
+              value: "",
+              error: "",
+            },
+            email: {
+              value: "",
+              error: "",
+            },
+            message: {
+              value: "",
+              error: "",
+            },
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
   };
   return (
     <form className="form" onSubmit={handleSubmit}>
@@ -80,6 +123,11 @@ export const Contact = () => {
       >
         Submit{" "}
       </button>
+      {loading && (
+        <>
+          <p className="mt-2 text-center">Sending....</p>
+        </>
+      )}
     </form>
   );
 };
