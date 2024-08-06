@@ -16,11 +16,11 @@ interface PDFObjectOptions {
 }
 
 interface PdfViewerProps {
-  pdfUrl: string;
+  pdfUrl?: string;
   options?: PDFObjectOptions;
 }
 
-const PdfViewer: React.FC<PdfViewerProps> = ({ pdfUrl, options }) => {
+const PdfViewer: React.FC<PdfViewerProps> = ({ pdfUrl, options }: any) => {
   const pdfContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
