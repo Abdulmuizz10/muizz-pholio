@@ -14,11 +14,11 @@ export default function Home() {
         Hello there! I&apos;m Abdul Muizz
       </Heading>
       <Paragraph className="max-w-xl mt-4">
-        I&apos;m a frontend developer that loves{" "}
+        I&apos;m a web developer that loves{" "}
         <Highlight>making, designing</Highlight> websites.
       </Paragraph>
       <Paragraph className="max-w-xl mt-4">
-        I&apos;m a junior frontend developer with
+        I&apos;m a junior web developer with
         <Highlight>2 years of experience</Highlight> building amazing websites
         that are responsive and good looking.
       </Paragraph>
